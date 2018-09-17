@@ -236,8 +236,8 @@ import os
 .
 class MyClass:
 .
-def __init__(self):
-  self.name = 'My name'
+  def __init__(self):
+      self.name = 'My name'
   .
   def f(self):
       return 'hello world'
