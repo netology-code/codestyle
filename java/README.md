@@ -168,10 +168,12 @@ s.addAll(Arrays.asList(args));
 
 
 * Переменные в циклах должны объявляться внутри самого оператора, если только нет непреодолимой причины этого не делать.
-` for (int i = 0; i <= n; i++) {
+```java 
+for (int i = 0; i <= n; i++) {
     doSomething(i);
 }
 
 for (Iterator i = c.iterator(); i.hasNext(); ) {
     doSomethingElse(i.next());
-}`
+}
+```
