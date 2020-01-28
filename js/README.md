@@ -25,12 +25,12 @@
 
 **Хорошо**
 ```javascript
-var item = {};
+let item = {};
 ```
 
 **Плохо**
 ```javascript
-var item = new Object();
+let item = new Object();
 ```
 
 ### 1.2 Зарезервированные слова
@@ -40,7 +40,7 @@ var item = new Object();
 
 **Хорошо**
 ```javascript
-var superman = {
+let superman = {
   defaults: { clark: 'kent' },
   hidden: true
 };
@@ -48,7 +48,7 @@ var superman = {
 
 **Плохо**
 ```javascript
-var superman = {
+let superman = {
   default: { clark: 'kent' },
   private: true
 };
@@ -59,14 +59,14 @@ var superman = {
 
 **Хорошо**
 ```javascript
-var superman = {
+let superman = {
   type: 'alien'
 };
 ```
 
 **Плохо**
 ```javascript
-var superman = {
+let superman = {
   class: 'alien'
 };
 ```
@@ -81,7 +81,7 @@ var superman = {
 
 **Хорошо**
 ```javascript
-var superman = {
+let superman = {
   defaults: { clark: 'kent' },
   type: 'alien',
   hidden: true
@@ -90,7 +90,7 @@ var superman = {
 
 **Плохо**
 ```javascript
-var superman = {defaults: { clark: 'kent' }, type: 'alien', hidden: true};
+let superman = {defaults: { clark: 'kent' }, type: 'alien', hidden: true};
 ```
 
 ## 2. Переменные
@@ -100,13 +100,13 @@ var superman = {defaults: { clark: 'kent' }, type: 'alien', hidden: true};
 
 **Хорошо**
 ```javascript
-var vegetables;
+let vegetables;
 ```
 
 **Плохо**
 ```javascript
-var ovoschi;
-var rrfgov;
+let ovoschi;
+let rrfgov;
 ```
 
 ## 3. Функции
@@ -131,7 +131,7 @@ function pravkaspiska() {
 ### 3.2 Передача функции в функцию
 При передаче функции, как аргумент в другую функцию, оформляйте код как в примере ниже.
 ```javascript
-var arr = ['Яблоко', 'Апельсин', 'Груша'].forEach(function (item, i, arr) {
+let arr = ['Яблоко', 'Апельсин', 'Груша'].forEach(function (item, i, arr) {
   alert(i + ': ' + item + ' (массив:' + arr + ')');
 });
 ```
@@ -144,7 +144,7 @@ var arr = ['Яблоко', 'Апельсин', 'Груша'].forEach(function (i
 **Хорошо**
 ```javascript
 if (age < 98) {
-  for (var i = 0, iMax = items.length; i < iMax; ++i) {
+  for (let i = 0, iMax = items.length; i < iMax; ++i) {
     // тело цикла
   }
 }
@@ -153,7 +153,7 @@ if (age < 98) {
 **Плохо**
 ```javascript
 if (age < 98) {
-for (var i = 0, iMax = items.length; i < iMax; ++i) {
+for (let i = 0, iMax = items.length; i < iMax; ++i) {
 // тело цикла
 }
 }
@@ -164,8 +164,8 @@ for (var i = 0, iMax = items.length; i < iMax; ++i) {
 
 **Хорошо**
 ```javascript
-var i;
-var iMax = items.length;
+let i;
+let iMax = items.length;
 for (i = 0; i < iMax, ++i) {
   // тело цикла
 }
@@ -177,8 +177,8 @@ function showName() {
 
 **Плохо**
 ```javascript
-var i;
-var iMax = items.length;
+let i;
+let iMax = items.length;
 
 for (i = 0; i < iMax, ++i) {
   // тело цикла
@@ -262,13 +262,13 @@ function edit(name, age)
 
 **Хорошо**
 ```javascript
-var string = 'строка';
-var phrase = "you're next";
+let string = 'строка';
+let phrase = "you're next";
 ```
 
 **Плохо**
 ```javascript
-var string = "строка";
+let string = "строка";
 ```
 
 ## 8. Точка с запятой
